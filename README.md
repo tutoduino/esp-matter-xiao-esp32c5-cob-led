@@ -11,7 +11,7 @@ It is derived from the `light` example of esp-matter, adapted for a single-chann
 ## Hardware
 
 - [Seeed Studio XIAO ESP32-C5](https://wiki.seeedstudio.com/xiao_esp32c5_getting_started/)
-- [Seeed Studio COB LED Driver](https://wiki.seeedstudio.com/COB_LED_Driver/) connected to D2 (GPIO4)
+- [Seeed Studio COB LED Driver](https://www.seeedstudio.com/COB-LED-Driver-Board-for-Seeed-Studio-XIAO-p-6602.html)
 - Boot button on GPIO28
 
 ## Requirements
