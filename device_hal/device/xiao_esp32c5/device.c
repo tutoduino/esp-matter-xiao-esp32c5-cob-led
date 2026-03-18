@@ -18,7 +18,7 @@
 #include <led_driver.h>
 
 #define LED_GPIO_PIN GPIO_NUM_25
-#define LED_CHANNEL 0 /* RMT_CHANNEL_0 */
+#define LED_CHANNEL 0 /* LEDC_CHANNEL_0 */
 #define BUTTON_GPIO_PIN GPIO_NUM_28
 
 static const char *TAG = "device";
@@ -28,6 +28,11 @@ led_driver_config_t led_driver_get_config()
     led_driver_config_t config = {
         .gpio = LED_GPIO_PIN,
         .channel = LED_CHANNEL,
+        /* The COB LED Driver uses an active-low PWM signal:
+           the LED turns on when the GPIO is low (duty cycle = 0)
+           and turns off when the GPIO is high (duty cycle = 255).
+           output_invert = true corrects this so that a higher
+           brightness value in Home Assistant produces a brighter LED. */    
         .output_invert = true,    
     };
     return config;
