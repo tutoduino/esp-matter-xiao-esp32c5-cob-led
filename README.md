@@ -8,6 +8,8 @@ This example creates a Matter dimmable light device using the ESP Matter data mo
 
 It is derived from the `light` example of esp-matter, adapted for a single-channel PWM COB LED.
 
+Full tutorial available at: [https://tutoduino.fr/en/matter-led-xiao-esp32c5/](https://tutoduino.fr/en/matter-led-xiao-esp32c5/)
+
 ## Hardware
 
 - [Seeed Studio XIAO ESP32-C5](https://wiki.seeedstudio.com/xiao_esp32c5_getting_started/)
